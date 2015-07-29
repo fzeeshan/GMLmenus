@@ -3,6 +3,7 @@
 //Menu syntax:
 //  |s = seperator (Bug: if |s is placed next to a |n an extra menu item would be added)
 //  |n = new item
+//  |cRRRGGGBBB = Change text color 
 var str, background, foreground, width, height;
 str = " "+argument0 //A hacky thing so that it draws the first item properly, I should probably properly fix this later
 background = argument1
@@ -88,3 +89,6 @@ if mouse_check_button_released(mb_left) and !(mouse_x>xx and mouse_y>yy and mous
 }
 
 return -1; //If we haven't already returned something, return a -1 to indicate that nothing was clicked
+
+//If for some reason the program goes past our return annoy GitHub
+show_message("This program is being retarded")

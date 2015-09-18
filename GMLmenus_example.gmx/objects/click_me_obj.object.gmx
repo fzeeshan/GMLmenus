@@ -173,7 +173,7 @@ draw_self()
             <string>///Save and check the values returned from draw_menu
 if _show_menu=true //Check if the menu should be visible
 {
-menu_val=draw_menu(" |nItem 1 |nItem 2",make_colour_rgb(245,241,222),c_black,spawnx,spawny,100,40) //If it is save what is being clicked to a variable
+menu_val=draw_menu(" |nItem 1 |nItem 2",make_colour_rgb(245,241,222),c_black,spawnx,spawny,10,0,40,mb_left) //If it is save what is being clicked to a variable
 }
 
 if menu_val!=-1 //-1 indicates that the user has not clicked anything
